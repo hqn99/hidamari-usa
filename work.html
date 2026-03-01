@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>陽だまりのうさぎ</title>
+<link rel="stylesheet" href="./css/work.css" type="text/css">
+</head>
+<body>
+<div id="wrapper">
+
+<header class="site-header">
+	<div class="header-top">
+		<div class="header-logo-group">
+      <img src="images/logo.png" alt="陽だまりのうさぎのロゴ">
+      <div class="header-logo">陽だまりのうさぎ</div>
+    </div>
+    <nav class="header-sns">
+      <a href="https://www.instagram.com/hidamarinousagi/" class="icon instagram"></a>
+      <a href="#" class="icon line"></a>
+			<a href="https://minne.com/@hidamari-usa" class="icon minne"></a>
+			<a href="#" class="icon pinkoi"></a>
+			<a href="#" class="icon etsy"></a>
+    </nav>
+  </div>	
+	<nav>
+		<ul class="header-nav">
+			<li class="nav-item"><a href="./index.html" class="button-01 home">ホーム</a></li>
+			<li class="nav-item"><a href="./news.html" class="button-01 news">お知らせ</a></li>
+			<li class="nav-item"><a href="./work.html" class="button-01 work">作品集</a></li>
+			<li class="nav-item"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdNVM219rcetu0OfHrSMZx2u7g0_mI4Am3cXcTMHtJVlJa6pg/viewform" class="button-01 order">オーダー</a></li>
+			<li class="nav-item"><a href="./contact.html" class="button-01 contact">お問い合わせ</a></li>
+		</ul>
+	</nav>
+</header>
+<main>
+	<h2 class="section-title">
+		<span class="icon"></span>作品集
+	</h2>
+	<div id="production">
+		<div class="production_box">
+			<a href="images/news_item.png" class="zoom-g">
+				<img src="images/news_item.png" alt="うさぎ (2023.05)" />
+			</a>
+		</div>
+		<div class="production_box">
+			<a href="images/news_item.png" class="zoom-g">
+				<img src="images/news_item.png" alt="私のロゴ (2023.05)" />
+			</a>
+		</div>
+		<div class="production_box">
+			<a href="images/news_item.png" class="zoom-g">
+				<img src="images/news_item.png" alt="名刺 (2023.06)" />
+			</a>
+		</div>
+		<div class="production_box">
+			<a href="images/news_item.png" class="zoom-g">
+				<img src="images/news_item.png" alt="図形 (2023.09)" />
+			</a>				
+		</div>
+		<div class="production_box">
+			<a href="images/news_item.png" class="zoom-g">
+				<img src="images/news_item.png" alt="ポット (2023.10)" />
+			</a>						
+		</div>
+		<div class="production_box">
+			<a href="images/news_item.png" class="zoom-g">
+				<img src="images/news_item.png" alt="蛇口 (2023.10)" />
+			</a>
+		</div>
+		<div class="production_box">
+			<a href="images/news_item.png" class="zoom-g">
+				<img src="images/news_item.png" alt="淡水魚 (2023.11)" />
+			</a>
+		</div>
+		<div class="production_box">
+			<a href="images/news_item.png" class="zoom-g">
+				<img src="images/news_item.png" alt="缶 (2023.12)" />
+			</a>
+		</div>
+		<div class="production_box">
+			<a href="images/news_item.png" class="zoom-g">
+				<img src="images/news_item.png" alt="人間とロボット (2024.02)" />
+			</a>
+		</div>
+		<div class="production_box">
+			<a href="images/news_item.png" class="zoom-g">
+				<img src="images/news_item.png" alt="イベントロゴ (2024.05)" />
+			</a>
+		</div>
+	</div>
+</main>
+<br>
+<footer>Copyright © 2025 陽だまりのうさぎ All Rights Reserved.</footer>
+</div>
+</body>
+
+<script src="./js/luminous.js"></script>
+<link href="./css/luminous.css" rel="stylesheet">
+<script>
+	new LuminousGallery(
+		document.querySelectorAll('.zoom-g'),
+		{arrowNavigation:true},
+		{caption:
+			function(alt){
+				return alt.querySelector('img').getAttribute('alt');
+			}
+		}
+	);
+</script>
+</html>

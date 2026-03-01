@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>陽だまりのうさぎ</title>
+<link rel="stylesheet" href="./css/contact.css" type="text/css">
+</head>
+<body>
+<div id="wrapper">
+
+<header class="site-header">
+	<div class="header-top">
+		<div class="header-logo-group">
+      <img src="images/logo.png" alt="陽だまりのうさぎのロゴ">
+      <div class="header-logo">陽だまりのうさぎ</div>
+    </div>
+    <nav class="header-sns">
+      <a href="https://www.instagram.com/hidamarinousagi/" class="icon instagram"></a>
+      <a href="#" class="icon line"></a>
+			<a href="https://minne.com/@hidamari-usa" class="icon minne"></a>
+			<a href="#" class="icon pinkoi"></a>
+			<a href="#" class="icon etsy"></a>
+    </nav>
+  </div>	
+	<nav>
+		<ul class="header-nav">
+			<li class="nav-item"><a href="./index.html" class="button-01 home">ホーム</a></li>
+			<li class="nav-item"><a href="./news.html" class="button-01 news">お知らせ</a></li>
+			<li class="nav-item"><a href="./work.html" class="button-01 work">作品集</a></li>
+			<li class="nav-item"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdNVM219rcetu0OfHrSMZx2u7g0_mI4Am3cXcTMHtJVlJa6pg/viewform" class="button-01 order">オーダー</a></li>
+			<li class="nav-item"><a href="./contact.html" class="button-01 contact">お問い合わせ</a></li>
+		</ul>
+	</nav>
+</header>
+<main>
+	<h2 class="section-title">
+		<span class="icon"></span>お問い合わせ
+	</h2>
+  <form  action="confirm.php" method="POST">
+    <p>販売作品やオーダーなど、<br>わからないことがあれば下記フォームにてお気軽にお問い合わせください。</p><br>
+    <div class="type">
+      <label for="type">お問い合わせ種別</label><br>
+      <input type="radio" name="type" value="オーダー" checked> オーダーについて<br>
+      <input type="radio" name="type" value="作品"> 作品について<br>
+      <input type="radio" name="type" value="リクエスト"> リクエスト<br>
+      <input type="radio" name="type" value="その他"> その他
+    </div>
+    <br>
+    <div class="name">
+      <label for="name">お名前</label><br>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="email">
+      <label for="email">メールアドレス</label><br>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="message">
+      <label for="message">お問い合わせ内容</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
+    <div class="button">
+        <button type="button">確認画面へ</button>
+    </div>
+  </form>
+</main>
+<br>
+<footer>Copyright © 2025 陽だまりのうさぎ All Rights Reserved.</footer>
+</div>
+</body>
+</html>

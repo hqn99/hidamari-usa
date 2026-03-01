@@ -1,0 +1,249 @@
+@charset "utf-8";
+
+/* ==================== リセットと基本設定 ==================== */
+html,body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 23px;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	color: #2B2B2B;
+	background-color: transparent;
+	font-family: "Shin Retro Maru Gothic";
+}
+
+img{
+	border: none;
+	vertical-align: bottom;
+}
+
+body{
+	background: #FFF1CF url("../images/bg_img.jpg") top center no-repeat;
+	background-size: cover;
+}
+
+hr {
+  display: none;
+}
+
+/* ==================== ヘッダー ==================== */
+.site-header {
+  width: 100%;
+}
+
+.header-top {
+	height:90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  border-bottom: 1px solid #BADCAD;
+}
+
+.header-logo-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-logo-group img {
+  width: 70px;
+  height: 70px;
+}
+
+.header-logo {
+  font-size: 40px;
+	font-family: "AlpenFontFree";
+}
+
+.header-sns {
+  display: flex;
+  gap: 15px;
+}
+
+.header-sns a {
+  display: block;
+  width: 45px;
+  height: 45px;
+	background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon.instagram {
+    background-image: url('../images/menu/instagram.png');
+}
+
+.icon.line {
+    background-image: url('../images/menu/LINE.png');
+}
+
+.icon.minne {
+    background-image: url('../images/menu/Minne.png');
+}
+
+.icon.pinkoi {
+    background-image: url('../images/menu/Pinkoi.png');
+}
+
+.icon.etsy {
+    background-image: url('../images/menu/Etsy.png');
+}
+
+.header-nav {
+  list-style: none;
+  margin: 0;
+	width: 100%;
+  padding: 0;
+	height: 60px;
+	line-height: 60px;
+  display: flex;
+  justify-content: space-around;
+	border-bottom: 1px solid #BADCAD;
+	font-size: 30px;
+	font-family: "AlpenFontFree";
+}
+
+.button-01 {
+  display: block;
+  text-decoration: none;
+  
+  background-repeat: no-repeat;
+  background-position: left 10px center; 
+  background-size: 60px 60px;
+  padding-left: 60px;
+}
+
+.button-01:visited 
+{
+  color: #2B2B2B; 
+}
+
+.button-01.home {
+  background-image: url("../images/menu/home_icon.png");
+	transition: color 0.2s ease;
+}
+.button-01.home:hover {
+  background-image: url("../images/menu/home_icon_hover.png");    
+	transition: background-image 0.2s ease, color 0.2s ease, opacity 0.2s ease;}
+
+.button-01.news {
+  background-image: url("../images/menu/news_icon.png");
+	transition: color 0.2s ease;
+}
+.button-01.news:hover {
+  background-image: url("../images/menu/news_icon_hover.png");    
+	transition: background-image 0.2s ease, color 0.2s ease, opacity 0.2s ease;}
+
+.button-01.work {
+  background-image: url("../images/menu/work_icon.png");
+	transition: color 0.2s ease;
+}
+.button-01.work:hover {
+  background-image: url("../images/menu/work_icon_hover.png");    
+	transition: background-image 0.2s ease, color 0.2s ease, opacity 0.2s ease;
+}
+
+.button-01.order {
+  background-image: url("../images/menu/order_icon.png");
+	transition: color 0.2s ease;
+}
+.button-01.order:hover {
+  background-image: url("../images/menu/order_icon_hover.png");    
+  transition: background-image 0.2s ease, color 0.2s ease, opacity 0.2s ease;
+}
+
+.button-01.contact {
+  background-image: url("../images/menu/contact_icon.png");
+	transition: color 0.2s ease;
+}
+.button-01.contact:hover {
+  background-image: url("../images/menu/contact_icon_hover.png");    
+  transition: background-image 0.2s ease, color 0.2s ease, opacity 0.2s ease;
+}
+
+/* ==================== お問い合わせ ==================== */
+
+.section-title {
+  font-size: 48px;
+	font-family: "AlpenFontFree";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-title .icon {
+  display: inline-block;
+  width: 100px; 
+  height: 100px; 
+  background-image: url('../images/menu/contact_icon_hover.png');
+  background-size: contain;
+  margin-right: 10px;
+}
+
+form {
+  padding: 0 20px;
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  border-radius: 5px;
+  text-align: left;
+}
+
+form p {
+  text-align: center;
+}
+
+input:not([type="radio"]),
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input, textarea {
+  border: 1px solid #BADCAD;
+  accent-color: #BADCAD;
+}
+
+textarea {
+  resize: vertical;
+  height: 300px;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer; 
+}
+
+.button {
+  text-align: right;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* ==================== フッター ==================== */
+
+footer{
+	width: 100%;
+	height: 30px;
+	background: #FCD575;
+	color: #2B2B2B;
+	text-align: center;
+	font-size: 13px;
+	line-height: 30px;
+}
