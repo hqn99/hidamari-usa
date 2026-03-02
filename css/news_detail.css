@@ -1,0 +1,355 @@
+@charset "utf-8";
+
+/* ==================== リセットと基本設定 ==================== */
+html,body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 23px;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	color: #2B2B2B;
+	background-color: transparent;
+	font-family: "Shin Retro Maru Gothic";
+}
+
+img{
+	border: none;
+	vertical-align: bottom;
+}
+
+body{
+	background: #FFF1CF url("../images/bg_img.jpg") top center no-repeat;
+	background-size: cover;
+}
+
+hr {
+  display: none;
+}
+
+/* ==================== ヘッダー ==================== */
+.site-header {
+  width: 100%;
+}
+
+.header-top {
+	height:90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  border-bottom: 1px solid #BADCAD;
+}
+
+.header-logo-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-logo-group img {
+  width: 70px;
+  height: 70px;
+}
+
+.header-logo {
+  font-size: 40px;
+	font-family: "AlpenFontFree";
+}
+
+.header-sns {
+  display: flex;
+  gap: 15px;
+}
+
+.header-sns a {
+  display: block;
+  width: 45px;
+  height: 45px;
+	background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon.instagram {
+    background-image: url('../images/menu/instagram.png');
+}
+
+.icon.line {
+    background-image: url('../images/menu/LINE.png');
+}
+
+.icon.minne {
+    background-image: url('../images/menu/Minne.png');
+}
+
+.icon.pinkoi {
+    background-image: url('../images/menu/Pinkoi.png');
+}
+
+.icon.etsy {
+    background-image: url('../images/menu/Etsy.png');
+}
+
+.header-nav {
+  list-style: none;
+  margin: 0;
+	width: 100%;
+  padding: 0;
+	height: 60px;
+	line-height: 60px;
+  display: flex;
+  justify-content: space-around;
+	border-bottom: 1px solid #BADCAD;
+	font-size: 30px;
+	font-family: "AlpenFontFree";
+}
+
+.button-01 {
+  display: block;
+  text-decoration: none;
+  color: #2B2B2B;
+  
+  background-repeat: no-repeat;
+  background-position: left 10px center; 
+  background-size: 60px 60px;
+  padding-left: 60px;
+}
+
+.button-01:visited 
+{
+  color: #2B2B2B; 
+}
+
+.button-01.home {
+  background-image: url("../images/menu/home_icon.png");
+	transition: color 0.2s ease;
+}
+.button-01.home:hover {
+  background-image: url("../images/menu/home_icon_hover.png");    
+	transition: background-image 0.2s ease, color 0.2s ease, opacity 0.2s ease;}
+
+.button-01.news {
+  background-image: url("../images/menu/news_icon.png");
+	transition: color 0.2s ease;
+}
+.button-01.news:hover {
+  background-image: url("../images/menu/news_icon_hover.png");    
+	transition: background-image 0.2s ease, color 0.2s ease, opacity 0.2s ease;}
+
+.button-01.work {
+  background-image: url("../images/menu/work_icon.png");
+	transition: color 0.2s ease;
+}
+.button-01.work:hover {
+  background-image: url("../images/menu/work_icon_hover.png");    
+	transition: background-image 0.2s ease, color 0.2s ease, opacity 0.2s ease;
+}
+
+.button-01.order {
+  background-image: url("../images/menu/order_icon.png");
+	transition: color 0.2s ease;
+}
+.button-01.order:hover {
+  background-image: url("../images/menu/order_icon_hover.png");    
+  transition: background-image 0.2s ease, color 0.2s ease, opacity 0.2s ease;
+}
+
+.button-01.contact {
+  background-image: url("../images/menu/contact_icon.png");
+	transition: color 0.2s ease;
+}
+.button-01.contact:hover {
+  background-image: url("../images/menu/contact_icon_hover.png");    
+  transition: background-image 0.2s ease, color 0.2s ease, opacity 0.2s ease;
+}
+
+/* ==================== お知らせ ==================== */
+.main-content {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.article-card {
+    background-color: white; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 30px; /* カード内の余白 */
+}
+
+.article-header {
+    /* 戻るボタンとタイトルを分けるためのFlexbox */
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+}
+
+/* 戻るボタン（左上） */
+.top-back-link {
+    order: -1; /* Flexアイテムの順番を最初に */
+    text-decoration: none;
+    color: #444;
+    padding: 5px 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.section-title {
+    width: 100%; /* 1行全体を占有 */
+    order: 0; /* 戻るボタンの下に配置 */
+    text-align: center;
+    margin-top: -20px; /* 戻るボタンの近くに寄せるための微調整 */
+}
+
+.section-title h1 {
+    font-size: 48px;
+    margin: 0;
+    font-family: "AlpenFontFree"; /* サイトのタイトルフォントに合わせる */
+}
+
+.article-date {
+    font-size: 20px;
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #666;
+    display: inline-block;
+    border-bottom: none;
+    padding-bottom: 2px;
+    text-align: right;
+}
+
+.article-body {
+    padding-bottom: 30px;
+}
+
+/* 画像 */
+.article-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+/* 本文テキスト */
+.article-text {
+    text-align: left;
+}
+.article-text p {
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+/* 署名部分 */
+.signature {
+    text-align: right !important;
+    margin-top: 40px;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.article-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+/* ページネーションリンク (< >) */
+.pagination {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%; /* 中央配置を可能にする */
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 24px;
+    padding: 5px 10px;
+    border: none;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+/* 戻るボタン（右下） */
+.bottom-back-link {
+    align-items: right;
+    text-decoration: none;
+    color: #444;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: none;
+    background-color: transparent;
+}
+
+
+
+.news-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.news-image {
+    width: 100%;
+    height: 100%;
+    background-color: #E0E0E0;
+    margin-bottom: 10px;
+}
+
+.news-date {
+    font-size: 18px;
+    margin: 5px 0 5px 0;
+}
+
+.news-title {
+    font-size: 18px;
+}
+
+.news-back-link {
+    max-width: 1100px;
+    margin: 20px auto 0 auto; 
+    text-align: left;
+    padding-right: 30px;
+    font-size: 18px;
+}
+
+.news-back-link a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.news-date {
+  text-align: right;
+}
+
+/* ==================== フッター ==================== */
+
+footer{
+	width: 100%;
+	height: 30px;
+	background: #FCD575;
+	color: #2B2B2B;
+	text-align: center;
+	font-size: 13px;
+	line-height: 30px;
+}
