@@ -259,23 +259,19 @@ hr {
 }
 
 .article-footer {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; /* 3カラムに分割 */
     align-items: center;
-    padding-top: 20px;
     margin-top: 20px;
 }
 
-/* ページネーションリンク (< >) */
 .pagination {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    width: 100%; /* 中央配置を可能にする */
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
+    grid-column: 2; /* 真ん中の列に配置 */
+}
+
+.bottom-back-link {
+    grid-column: 3; /* 右側の列に配置 */
+    text-align: right;
 }
 
 .pagination a {
@@ -288,18 +284,23 @@ hr {
     display: inline-block;
 }
 
-/* 戻るボタン（右下） */
-.bottom-back-link {
-    align-items: right;
-    text-decoration: none;
-    color: #444;
-    font-size: 16px;
-    padding: 5px 10px;
-    border: none;
-    background-color: transparent;
+/* ページネーションと戻るボタンのリンク色を固定 */
+.pagination a, 
+.bottom-back-link, 
+.top-back-link {
+    color: #444; /* 元の文字色（お好みの色に調整してください） */
+    text-decoration: none; /* 下線を消す */
 }
 
-
+/* クリックした後（訪問済み）やマウスを乗せた時も色を変えない */
+.pagination a:visited, 
+.bottom-back-link:visited, 
+.top-back-link:visited,
+.pagination a:hover, 
+.bottom-back-link:hover, 
+.top-back-link:hover {
+    color: #444; /* ここを同じ色にすることで青くなりません */
+}
 
 .news-container {
     display: flex;
